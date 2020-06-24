@@ -269,49 +269,51 @@ hr{
 }
 .grid{
     display: grid;
-    grid-template-rows: 150px 100px 150px 100px 100px ;
-    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 150px 100px 150px ;
+    grid-template-rows: 150px 25px 150px 100px 100px ;
+    grid-template-columns: 50px 100px 100px 100px 100px 75px 75px 100px 150px 50px;
+   
+
     
 }
 .gridleft{
     background-image: url("gridleft.jpg");
     background-size: cover;
-    grid-column: 3 / span 3;
+    grid-column: 2 / span 3;
     grid-row: 1 / span 3 ;
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
 }
 .topleft{
     background-image: url("gridtopleft.jpg");
     background-size: cover;
-    grid-column: 8 / span 1;
+    grid-column: 7 / span 1;
     grid-row: 1 / span 1;
-    height: 150px;
-    width: 150px;
+    height: 160px;
+    width: 160px;
 }
 .topright{
     background-image: url("gridtopright.jpg");
     background-size: cover;
-    grid-column: 10 / span 1;
+    grid-column: 9 / span 1;
     grid-row: 1 / span 1;
-    height: 150px;
-    width: 150px;
+    height: 160px;
+    width: 160px;
 }
 .bottomleft{
     background-image: url("gridbottomright.jpg");
     background-size: cover;
-    grid-column: 8 / span 1;
+    grid-column: 7 / span 1;
     grid-row: 3 / span 1;
-    height: 150px;
-    width: 150px;
+    height: 160px;
+    width: 160px;
 }
 .bottomright{
     background-image: url("gridbottomright.jpg");
     background-size: cover;
-    grid-column: 10 / span 1;
+    grid-column: 9 / span 1;
     grid-row: 3 / span 1;
-    height: 150px;
-    width: 150px;
+    height: 160px;
+    width: 160px;
 }
 footer{
     height: 100px;
@@ -326,8 +328,8 @@ footer{
     height: 36px;
 }
 .end{
-    width: 100%;
-}}
+    width: 100%;}
+}
 
 @media only screen and (max-width: 991.98px){
     body{
@@ -498,6 +500,37 @@ footer{
     width: 100%;
 }
 }
+@media only screen and (max-width: 900px){
+    .abt{
+        margin: 0px -30px ;
+    }
+    .portfolio{
+        margin: 0px -30px 0px 0px;
+    }
+    .test{ 
+        margin: 0px -30px 0px 0px;
+    }
+    .contact{ 
+        margin: 0px 0px 0px 20x;
+    }
+
+}
+@media only screen and (max-width: 860px){
+    .abt{
+        margin: 0px -15px ;
+    }
+    .portfolio{
+        margin: 0px -15px 0px 0px;
+    }
+    .test{ 
+        margin: 0px -15px 0px 0px;
+    }
+    .contact{ 
+        margin: 0px 0px 0px 10px;
+    }
+
+}
+
 @media only screen and (max-width: 767.98px){
     body{
     font-family: 'Montserrat', sans-serif;
@@ -510,16 +543,23 @@ ul{
     align-items: center;
 }
 .abt{
-    margin: 0px -60px ;
+    margin: 0px -10x ;
+    font-size: 10px;
 }
 .portfolio{
-    margin: 0px -60px 0px 0px;
+    margin: 0px -10px 0px 0px;
+    font-size: 10px;
 }
 .test{ 
-    margin: 0px -60px 0px 0px;
+    margin: 0px -10px 0px 0px;
+    font-size: 10px;
+}
+.blog{
+    font-size: 10px;
 }
 .contact{ 
-    margin: 0px 0px 0px 40x;
+    margin: 0px 0px 0px 3px;
+    font-size: 10px;
 }
  .intdes {
     font-weight : bolder;
@@ -560,29 +600,29 @@ hr{
 .left{
     background-image: url("left.jpg");
     background-size: cover;
-    height: 200px;
-    width: 300px;
+    height: 133px;
+    width: 200px;
     margin: 0px 10px 0px 0px;
 }
 .between{
     background-image: url("between.jpg");
     background-size: cover;
-    height: 200px;
-    width: 300px;
+    height: 133px;
+    width: 200px;
     margin: 0px 10px;
 }
 .right{
     background-image: url("right.jpg");
     background-size: cover;
-    height: 200px;
-    width: 300px;
+    height: 133px;
+    width: 200px;
     margin: 0px 0px 0px 10px;
 }
 .lorem{
-    width: 300px;    
+    width: 200px;    
 }
 .lorem2{
-    width: 300px;
+    width: 200px;
     margin-left: 10px;
 }
 
@@ -603,53 +643,47 @@ hr{
     text-align: center;
     margin: 100px
 }
-.grid{
-    display: grid;
-    grid-template-rows: 150px 25px 150px 100px 100px ;
-    grid-template-columns: 50px 100px 100px 100px 100px 75px 75px 100px 150px 50px;
-   
-
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     
 }
 .gridleft{
     background-image: url("gridleft.jpg");
     background-size: cover;
-    grid-column: 2 / span 3;
-    grid-row: 1 / span 3 ;
     height: 350px;
     width: 350px;
+    margin-bottom: 30px;
 }
 .topleft{
     background-image: url("gridtopleft.jpg");
     background-size: cover;
-    grid-column: 7 / span 1;
-    grid-row: 1 / span 1;
-    height: 160px;
-    width: 160px;
+    height: 350px;
+    width: 350px;
+    margin: 30px;
 }
 .topright{
     background-image: url("gridtopright.jpg");
     background-size: cover;
-    grid-column: 9 / span 1;
-    grid-row: 1 / span 1;
-    height: 160px;
-    width: 160px;
+    height: 350px;
+    width: 350px;
+    margin: 30px;
 }
 .bottomleft{
     background-image: url("gridbottomright.jpg");
     background-size: cover;
-    grid-column: 7 / span 1;
-    grid-row: 3 / span 1;
-    height: 160px;
-    width: 160px;
+    height: 350px;
+    width: 350px;
+    margin: 30px;
 }
 .bottomright{
     background-image: url("gridbottomright.jpg");
     background-size: cover;
-    grid-column: 9 / span 1;
-    grid-row: 3 / span 1;
-    height: 160px;
-    width: 160px;
+    height: 350px;
+    width: 350px;
+    margin: 30px;
 }
 footer{
     height: 100px;
